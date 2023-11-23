@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/seop/2023_opensw_TA/10_systemcall_file_descriptor",
-      "program": "/home/seop/2023_opensw_TA/10_systemcall_file_descriptor/build/Debug/outDebug",
+      "cwd": "/home/seop/2023_opensw_TA/12_systemcall_process",
+      "program": "/home/seop/2023_opensw_TA/12_systemcall_process/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
