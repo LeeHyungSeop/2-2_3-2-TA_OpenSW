@@ -1,4 +1,4 @@
-// SIGINT(ctrl + C), SIGQUIT(ctrl + \),에 대한 signal handler를 등록하기
+// SIGINT(ctrl + C), SIGQUIT(ctrl + \), SIGALRM 에 대한 signal handler를 등록하기
 #include <stdio.h>
 #include <signal.h>
 #include <errno.h>

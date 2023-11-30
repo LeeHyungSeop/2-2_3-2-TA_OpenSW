@@ -4,6 +4,7 @@
 
 /*
     Infinite Loop 안에서 pid 출력
+    SIGINT = Ctrl + C
 */
 
 int main(void){
@@ -14,4 +15,4 @@ int main(void){
         sleep(1);
     }
     return 0;
-}   
+}  

@@ -22,15 +22,16 @@ int main(void){
 
     sa_sigint.sa_handler = sigint_handler; // SIGINT가 들어오면, sigint_handler를 실행
     sigemptyset(&(sa_sigint.sa_mask)); // sa_mask를 0으로 초기화 -> signal handler가 실행되는 동안에는 다른 signal blocking
+    sa_sigint.sa_flags = 0;
     if(sigaction(SIGINT, &sa_sigint, NULL) == -1){
         perror("SIGINT sigaction error : ");
         exit(0);
     }
 
-    sa_sigint.sa_flags = 0;
     sa_sigquit.sa_handler = sigquit_handler; // SIGQUIT가 들어오면, sigquit_handler를 실행
     sigemptyset(&(sa_sigquit.sa_mask)); // sa_mask를 0으로 초기화 -> signal handler가 실행되는 동안에는 다른 signal blocking
     sa_sigquit.sa_flags = 0;
+    
     if(sigaction(SIGQUIT, &sa_sigquit, NULL) == -1){
         perror("SIGQUIT sigaction error : ");
         exit(0);
